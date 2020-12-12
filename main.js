@@ -10,6 +10,7 @@ function createWindow() {
 		height:1200,
 		frame:false
 	})
-	win.loadFile('index.html')
+	win.loadFile('index.html');
+	win.maximize();
 }
 app.on('ready',createWindow)
