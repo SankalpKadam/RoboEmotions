@@ -13,14 +13,16 @@
 		body{
 			background: #000000;
 		}
-		#angry,#sad{
-			display:none;
+		#angry,#sad,#happy,#blink{
+			display: none;
 		}
 	</style>
 </head>
 <body>
 	<div style="width: 220px">
-<svg  viewBox="0 0 595.28 841.89" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+		<!--Normal Face-->
+<svg  viewBox="0 0 595.28 841.89" fill="none"  xmlns="http://www.w3.org/2000/svg">
 <g id="Desktop - 2">
 <path id="lefteye" d="M357 287C357 260.49 378.49 239 405 239H519C545.51 239 567 260.49 567 287V409C567 435.51 545.51 457 519 457H405C378.49 457 357 435.51 357 409V287Z" fill="#BEE5E9"/>
 <path id="righteye" d="M914 287C914 260.49 935.49 239 962 239H1076C1102.51 239 1124 260.49 1124 287V409C1124 435.51 1102.51 457 1076 457H962C935.49 457 914 435.51 914 409V287Z" fill="#BEE5E9"/>
@@ -29,6 +31,9 @@
 <path id="righteyebrow" d="M1156 155C1156 169.912 1095.78 155 1021.5 155C947.218 155 887 169.912 887 155C887 140.088 947.218 128 1021.5 128C1095.78 128 1156 140.088 1156 155Z" fill="#BEE5E9"/>
 </g>
 </svg>
+
+	<!--Angry Face-->
+
 <svg  viewBox="0 0 595.28 841.89" fill="none" id="angry" xmlns="http://www.w3.org/2000/svg">
 <g id="AngryFace">
 <path id="LeftEye" d="M357 298.5C357 271.99 359.49 250.5 386 250.5L567 369.5V420.5C567 447.01 545.51 468.5 519 468.5H405C378.49 468.5 357 447.01 357 420.5V298.5Z" fill="#BEE5E9"/>
@@ -37,10 +42,11 @@
 <path id="LeftEyeBrow" d="M653.823 364.064C653.823 364.064 411.849 180.781 350.674 179.332C350.674 179.332 227.9 7.53871 504.061 215.138C504.061 215.138 661.295 351.802 653.823 364.064Z" fill="#BEE5E9"/>
 <path id="RightEyeBrow" d="M827.183 363.843C827.183 363.843 1068.46 179.644 1129.63 177.962C1129.63 177.962 1251.75 5.70426 976.379 214.35C976.379 214.35 819.664 351.61 827.183 363.843Z" fill="#BEE5E9"/>
 </g>
-
 </svg>
-<svg viewBox="0 0 595.28 841.89" fill="none" id="sad" xmlns="http://www.w3.org/2000/svg">
+	
+	<!--Happy Face-->
 
+<svg viewBox="0 0 595.28 841.89" fill="none" id="happy" xmlns="http://www.w3.org/2000/svg">
 <g id="Desktop - 1">
 <path id="HappyRightBrow" d="M830.857 316.024C831.932 309.469 834.791 303.308 839.194 298.335C886.144 245.309 925.232 217.31 998.025 193.148C1008.61 189.636 1020.01 189.122 1030.83 191.809C1134.57 217.578 1183.43 268.147 1210.5 325.5V325.5C1221.2 351.146 1186.37 372.37 1167.27 352.189C1120.97 303.274 1077.15 267.537 1030.22 253.181C1019.98 250.047 1008.91 251.612 999.361 256.468C943.867 284.677 914.185 310.595 890.018 340.445C866.51 369.482 824.815 352.892 830.857 316.024V316.024Z" fill="#BEE5E9"/>
 <path id="HappyLeftBrow" d="M225.857 316.024C226.932 309.469 229.791 303.308 234.194 298.335C281.144 245.309 320.232 217.31 393.025 193.148C403.605 189.636 415.007 189.122 425.826 191.809C529.572 217.578 578.432 268.147 605.5 325.5V325.5C616.2 351.146 581.375 372.37 562.271 352.189C515.969 303.274 472.154 267.537 425.224 253.181C414.977 250.047 403.913 251.612 394.361 256.468C338.867 284.677 309.185 310.595 285.018 340.445C261.51 369.482 219.815 352.892 225.857 316.024V316.024Z" fill="#BEE5E9"/>
@@ -49,18 +55,18 @@
 <path id="HappyMouth" d="M369.63 646.306C392.63 590.306 1022.45 609.084 1064.45 646.306C1106.45 683.527 993.954 834.527 993.954 834.527C993.954 834.527 690.454 1061.25 440.454 834.527C440.454 834.527 346.63 702.306 369.63 646.306Z" fill="#BEE5E9"/>
 </g>
 </svg>
-<svg viewBox="0 0 1440 1024" fill="none" id="sad" xmlns="http://www.w3.org/2000/svg">
-<rect width="1440" height="1024" fill="#E5E5E5"/>
+
+	<!--Sad Face-->
+
+<svg viewBox="0 0 595.28 841.89" fill="none" id="sad" xmlns="http://www.w3.org/2000/svg">
 <g id="Desktop - 1">
-<rect width="1440" height="1024" fill="black"/>
-<path id="Sadmouth" d="M1024 826.857C1024 832.902 923.587 645.891 775.309 645.891C627.031 645.891 522 832.902 522 826.857C522 820.812 627.031 624 775.309 624C923.587 624 1024 820.812 1024 826.857Z" fill="#BEE5E9"/>
-<path id="Sadleftbrow" d="M394.295 203.838C360.059 181.427 438.365 258 509.19 258C580.016 258 690.237 168.976 649.037 140.339C607.837 111.701 588.108 162.75 548.649 203.838C509.19 244.926 428.532 226.25 394.295 203.838Z" fill="#BEE5E9"/>
-<path id="Sadrightbrow" d="M1118.7 203.838C1152.94 181.427 1074.64 258 1003.81 258C932.984 258 822.763 168.976 863.963 140.339C905.163 111.701 924.892 162.75 964.351 203.838C1003.81 244.926 1084.47 226.25 1118.7 203.838Z" fill="#BEE5E9"/>
-<path id="Sadlefteye" d="M544.88 329.877C544.88 329.877 598.145 300.903 620.048 329.877C637.94 353.544 620.048 402.184 620.048 402.184C620.048 402.184 565.74 437.769 532.031 402.184C503.507 372.074 544.88 329.877 544.88 329.877Z" fill="#BEE5E9"/>
-<path id="Sadrigheye" d="M968.12 329.877C968.12 329.877 914.855 300.903 892.952 329.877C875.06 353.544 892.952 402.184 892.952 402.184C892.952 402.184 947.26 437.769 980.969 402.184C1009.49 372.074 968.12 329.877 968.12 329.877Z" fill="#BEE5E9"/>
+<path id="Sadleftbrow" d="M516 148C521.42 163.031 483.835 215.789 400.637 245.79C317.438 275.791 253.919 254.667 248.499 239.637C243.079 224.606 302.242 233.65 385.441 203.649C468.64 173.649 510.58 132.969 516 148Z" fill="#BEE5E9"/>
+<path id="Sadrightbrow" d="M1230.74 237.325C1226.03 252.593 1164.27 272.136 1079.76 246.061C995.25 219.987 957.21 164.907 961.921 149.639C966.632 134.371 1008.46 177.182 1092.97 203.256C1177.48 229.33 1235.45 222.057 1230.74 237.325Z" fill="#BEE5E9"/>
+<path id="Sadrighteye" d="M887.17 395.178C893.26 388.009 903.622 386.209 911.869 390.733C1013.55 446.521 1048.46 448.026 1154.63 391.022C1162.98 386.539 1173.47 389.364 1178.25 397.548C1182.02 403.994 1181.24 412.186 1176.28 417.769C1069.09 538.452 1002.8 543.113 887.711 421C880.942 413.818 880.78 402.7 887.17 395.178Z" fill="#BEE5E9"/>
+<path id="Sadlefteye" d="M346.17 396.343C352.26 389.175 362.622 387.374 370.869 391.899C472.549 447.686 507.458 449.191 613.63 392.188C621.981 387.704 632.471 390.53 637.254 398.713V398.713C641.021 405.16 640.243 413.352 635.284 418.934C528.092 539.618 461.804 544.278 346.711 422.166C339.942 414.983 339.78 403.865 346.17 396.343V396.343Z" fill="#BEE5E9"/>
+<path id="Sadmouth" d="M928 762.314C928 807.697 860.395 794.99 777 794.99C693.605 794.99 626 809.149 626 762.314C626 723.8 693.605 729.637 777 729.637C860.395 729.637 928 716.93 928 762.314Z" fill="#BEE5E9"/>
 </g>
 </svg>
-
 </div>
 <!--
 <script id="core" src="https://cdn.jsdelivr.net/kute.js/1.5.5/kute.min.js"></script>
@@ -70,22 +76,96 @@
 <script src="./kute-svg.min.js"></script>
 
 <script>
-
+//Normal To Angrymouth
 document.addEventListener('click',()=>{
-var tween = KUTE.to('#mouth', { path: '#Angrymouth' }, {duration: 200,morphIndex:127}).start();
-var tween1 = KUTE.to('#lefteyebrow', { path: '#LeftEyeBrow' }, {duration: 200,morphIndex:127},{easing:'easingBounceIn'}).start();
-var tween2 = KUTE.to('#righteyebrow', { path: '#RightEyeBrow' }, {duration: 200,morphIndex:127},{easing:'easingBounceIn'}).start();
-var tween3 = KUTE.to('#lefteye', { path: '#LeftEye' }, {duration: 200,morphIndex:127},{easing:'easingBounceIn'}).start();
-var tween4 = KUTE.to('#righteye', { path: '#RightEye' }, {duration: 200,morphIndex:127},{easing:'easingBounceIn'}).start();
+var tween = KUTE.to('#mouth', { path: '#Sadmouth' },
+ {
+ 	duration: 200,
+ })
+.start();
+var tween1 = KUTE.to('#lefteyebrow', { path: '#Sadleftbrow' },
+ {
+ 	duration: 200,
+  	
+ })
+.start();
+var tween2 = KUTE.to('#righteyebrow', { path: '#Sadrightbrow' }, 
+	{
+		duration: 200,
+		
+	})
+.start();
+var tween3 = KUTE.to('#lefteye', { path: '#Sadlefteye' },
+{
+	duration: 200,
+})
+.start();
+var tween4 = KUTE.to('#righteye', { path: '#Sadrighteye' }, 
+{
+	duration: 200,
+})
+.start();
 })/*
+//Normal to Angry
 document.addEventListener('click',()=>{
-var tweenn = KUTE.to('#HappyMouth', { path: '#sadmouth' }, {duration: 300}).start();
-var tweenn1 = KUTE.to('#HappyLeftBrow', { path: '#sadlefteyebrow' }, {duration: 300}).start();
-var tweenn2 = KUTE.to('#HappyRightBrow', { path: '#sadrighteyebrow' }, {duration: 300}).start();
-var tweenn3 = KUTE.to('#HappyLeftEye', { path: '#sadlefteye' }, {duration: 300}).start();
-var tweenn4 = KUTE.to('#HappyRightEye', { path: '#sadrighteye' }, {duration: 300}).start();
+var tween = KUTE.to('#mouth', { path: '#Angrymouth' },
+ {
+ 	duration: 200,
+ })
+.start();
+var tween1 = KUTE.to('#lefteyebrow', { path: '#LeftEyeBrow' },
+ {
+ 	duration: 200,
+  	
+ })
+.start();
+var tween2 = KUTE.to('#righteyebrow', { path: '#RightEyeBrow' }, 
+	{
+		duration: 200,
+		
+	})
+.start();
+var tween3 = KUTE.to('#lefteye', { path: '#LeftEye' },
+{
+	duration: 200,
+})
+.start();
+var tween4 = KUTE.to('#righteye', { path: '#RightEye' }, 
+{
+	duration: 200,
+})
+.start();
+})
+//Angry to Happy
+document.addEventListener('click',()=>{
+var tween = KUTE.to('#Angrymouth', { path: '#Sadmouth' },
+ {
+ 	duration: 200,
+ })
+.start();
+var tween1 = KUTE.to('#LeftEyeBrow', { path: '#Sadleftbrow' },
+ {
+ 	duration: 200,
+  	
+ })
+.start();
+var tween2 = KUTE.to('#RightEyeBrow', { path: '#Sadrightbrow' }, 
+	{
+		duration: 200,
+		
+	})
+.start();
+var tween3 = KUTE.to('#LeftEye', { path: '#Sadlefteye' },
+{
+	duration: 200,
+})
+.start();
+var tween4 = KUTE.to('#RightEye', { path: '#Sadrighteye' }, 
+{
+	duration: 200,
+})
+.start();
 })*/
-
 </script>
 </body>
 </html>
